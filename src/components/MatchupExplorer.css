@@ -1,0 +1,208 @@
+.matchup-explorer {
+  padding: 1.5rem;
+}
+
+.matchup-explorer h2 {
+  margin: 0 0 1.5rem;
+  color: #1a1a2e;
+  font-size: 1.75rem;
+}
+
+.team-selectors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.team-selector {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.team-selector label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.team-selector select {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.team-selector select:focus {
+  outline: none;
+  border-color: #16213e;
+}
+
+.vs {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e94560;
+}
+
+.matchup-result {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.teams-display {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+
+.team-display {
+  text-align: center;
+}
+
+.team-display .flag {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.team-display .name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.team-display .rating {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.probability-bar {
+  display: flex;
+  height: 48px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.probability-bar > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: white;
+  font-size: 0.9rem;
+  min-width: 50px;
+}
+
+.team-a-prob {
+  background: #3498db;
+}
+
+.draw-prob {
+  background: #95a5a6;
+}
+
+.team-b-prob {
+  background: #e74c3c;
+}
+
+.probability-labels {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.meeting-probability {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.meeting-probability h4 {
+  margin: 0 0 0.5rem;
+  color: #666;
+}
+
+.meeting-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #16213e;
+  margin: 0;
+}
+
+.likely-matchups {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.likely-matchups h3 {
+  margin: 0 0 1rem;
+  color: #1a1a2e;
+}
+
+.matchup-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.matchup-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+}
+
+.matchup-item:last-child {
+  border-bottom: none;
+}
+
+.matchup-teams {
+  font-weight: 500;
+}
+
+.matchup-prob {
+  color: #16213e;
+  font-weight: 600;
+  background: #e8f4fd;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .team-selectors {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .team-selector {
+    max-width: 100%;
+  }
+
+  .vs {
+    display: none;
+  }
+
+  .teams-display {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,44 @@
+.header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 4px solid #e94560;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.header-content .trophy {
+  font-size: 2.5rem;
+}
+
+.header-content .subtitle {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  color: #e94560;
+  font-weight: 600;
+}
+
+.header-content .description {
+  margin: 0.5rem 0 0;
+  color: #a0a0a0;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .header-content h1 {
+    font-size: 1.75rem;
+    flex-direction: column;
+  }
+
+  .header {
+    padding: 1.5rem 1rem;
+  }
+}

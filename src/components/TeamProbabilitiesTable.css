@@ -1,0 +1,141 @@
+.team-probabilities {
+  padding: 1.5rem;
+}
+
+.team-probabilities h2 {
+  margin: 0 0 1rem;
+  color: #1a1a2e;
+  font-size: 1.75rem;
+}
+
+.team-probabilities.empty {
+  text-align: center;
+  padding: 3rem;
+}
+
+.no-data {
+  color: #888;
+  font-size: 1.1rem;
+}
+
+.table-container {
+  overflow-x: auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+thead {
+  background: #16213e;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+th {
+  padding: 1rem 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+th.sortable:hover {
+  background: #1e2d4a;
+}
+
+th.highlight {
+  background: #e94560;
+}
+
+tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s;
+}
+
+tbody tr:hover {
+  background: #f8f9fa;
+}
+
+tbody tr.top-team {
+  background: linear-gradient(90deg, rgba(233, 69, 96, 0.05) 0%, transparent 100%);
+}
+
+tbody tr.top-team:hover {
+  background: linear-gradient(90deg, rgba(233, 69, 96, 0.1) 0%, transparent 100%);
+}
+
+td {
+  padding: 0.75rem;
+}
+
+.team-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.team-cell .rank {
+  width: 24px;
+  text-align: center;
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.team-cell .flag {
+  font-size: 1.25rem;
+}
+
+.team-cell .name {
+  font-weight: 500;
+}
+
+td.highlight {
+  font-weight: 600;
+  background: rgba(233, 69, 96, 0.05);
+}
+
+/* Probability coloring */
+.prob-high {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+.prob-medium {
+  color: #2980b9;
+}
+
+.prob-low {
+  color: #7f8c8d;
+}
+
+.prob-very-low {
+  color: #bdc3c7;
+}
+
+@media (max-width: 768px) {
+  .table-container {
+    font-size: 0.8rem;
+  }
+
+  th, td {
+    padding: 0.5rem;
+  }
+
+  .team-cell .name {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
