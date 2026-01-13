@@ -67,7 +67,6 @@ const MOROCCO = createTeam('mar', 'Morocco', 'MAR', 'CAF', 14, 1815, '🇲🇦')
 const SENEGAL = createTeam('sen', 'Senegal', 'SEN', 'CAF', 19, 1770, '🇸🇳');
 const NIGERIA = createTeam('nga', 'Nigeria', 'NGA', 'CAF', 27, 1715, '🇳🇬');
 const EGYPT = createTeam('egy', 'Egypt', 'EGY', 'CAF', 32, 1680, '🇪🇬');
-const CAMEROON = createTeam('cmr', 'Cameroon', 'CMR', 'CAF', 38, 1655, '🇨🇲');
 const ALGERIA = createTeam('alg', 'Algeria', 'ALG', 'CAF', 36, 1660, '🇩🇿');
 const IVORY_COAST = createTeam('civ', "Côte d'Ivoire", 'CIV', 'CAF', 39, 1650, '🇨🇮');
 const TUNISIA = createTeam('tun', 'Tunisia', 'TUN', 'CAF', 42, 1645, '🇹🇳');
@@ -81,8 +80,6 @@ const IRAN = createTeam('irn', 'Iran', 'IRN', 'AFC', 21, 1755, '🇮🇷');
 const AUSTRALIA = createTeam('aus', 'Australia', 'AUS', 'AFC', 23, 1740, '🇦🇺');
 const SAUDI_ARABIA = createTeam('ksa', 'Saudi Arabia', 'KSA', 'AFC', 52, 1600, '🇸🇦');
 const QATAR = createTeam('qat', 'Qatar', 'QAT', 'AFC', 48, 1620, '🇶🇦');
-const IRAQ = createTeam('irq', 'Iraq', 'IRQ', 'AFC', 54, 1585, '🇮🇶');
-const UAE = createTeam('uae', 'UAE', 'UAE', 'AFC', 60, 1545, '🇦🇪');
 const UZBEKISTAN = createTeam('uzb', 'Uzbekistan', 'UZB', 'AFC', 64, 1535, '🇺🇿');
 const JORDAN = createTeam('jor', 'Jordan', 'JOR', 'AFC', 68, 1525, '🇯🇴');
 
