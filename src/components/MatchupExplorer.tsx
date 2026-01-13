@@ -45,7 +45,7 @@ export const MatchupExplorer = ({ matchupProbabilities }: MatchupExplorerProps) 
             <option value="">Select a team...</option>
             {sortedTeams.map(team => (
               <option key={team.id} value={team.id}>
-                {team.flag} {team.name}
+                {team.code} {team.name}
               </option>
             ))}
           </select>
@@ -62,7 +62,7 @@ export const MatchupExplorer = ({ matchupProbabilities }: MatchupExplorerProps) 
             <option value="">Select a team...</option>
             {sortedTeams.map(team => (
               <option key={team.id} value={team.id}>
-                {team.flag} {team.name}
+                {team.code} {team.name}
               </option>
             ))}
           </select>
@@ -73,12 +73,12 @@ export const MatchupExplorer = ({ matchupProbabilities }: MatchupExplorerProps) 
         <div className="matchup-result">
           <div className="teams-display">
             <div className="team-display">
-              <span className="flag">{teamA.flag}</span>
+              <span className="flag">{teamA.code}</span>
               <span className="name">{teamA.name}</span>
               <span className="rating">ELO: {teamA.eloRating}</span>
             </div>
             <div className="team-display">
-              <span className="flag">{teamB.flag}</span>
+              <span className="flag">{teamB.code}</span>
               <span className="name">{teamB.name}</span>
               <span className="rating">ELO: {teamB.eloRating}</span>
             </div>
@@ -131,7 +131,7 @@ export const MatchupExplorer = ({ matchupProbabilities }: MatchupExplorerProps) 
             {matchupProbabilities.slice(0, 15).map((matchup, index) => (
               <li key={index} className="matchup-item">
                 <span className="matchup-teams">
-                  {matchup.teamA.flag} {matchup.teamA.code} vs {matchup.teamB.code} {matchup.teamB.flag}
+                  {matchup.teamA.code} vs {matchup.teamB.code}
                 </span>
                 <span className="matchup-prob">
                   {formatProbability(matchup.probability)}

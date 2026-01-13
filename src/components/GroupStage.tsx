@@ -17,7 +17,7 @@ export const GroupStage = ({ groups }: GroupStageProps) => {
               {group.teams.map((team, index) => (
                 <li key={team.id} className="team-item">
                   <span className="team-seed">{index + 1}</span>
-                  <span className="team-flag">{team.flag}</span>
+                  <span className="team-flag">{team.code}</span>
                   <span className="team-name">{team.name}</span>
                   <span className="team-rating">{team.eloRating}</span>
                 </li>

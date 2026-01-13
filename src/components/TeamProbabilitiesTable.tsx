@@ -83,7 +83,7 @@ export const TeamProbabilitiesTable = ({ probabilities }: TeamProbabilitiesTable
               <tr key={tp.team.id} className={index < 10 ? 'top-team' : ''}>
                 <td className="team-cell">
                   <span className="rank">{index + 1}</span>
-                  <span className="flag">{tp.team.flag}</span>
+                  <span className="flag">{tp.team.code}</span>
                   <span className="name">{tp.team.name}</span>
                 </td>
                 <td className={getProbabilityClass(tp.reachRoundOf32)}>
