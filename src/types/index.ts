@@ -51,6 +51,34 @@ export interface Match {
   winner?: Team;
 }
 
+export interface ScheduledMatch {
+  matchNumber: number;
+  round: 'group' | KnockoutRound;
+  date: string; // ISO date string
+  time: string; // Local time
+  venue: string;
+  city: string;
+  group?: string; // For group stage matches
+  // For group stage, these will be actual teams
+  // For knockout, these define the bracket positions (e.g., "1A", "2B", "3ABCD")
+  teamADesignation: string;
+  teamBDesignation: string;
+}
+
+export interface TeamMatchProbability {
+  team: Team;
+  probability: number;
+}
+
+export interface ScheduleMatchDisplay extends ScheduledMatch {
+  // For group stage: actual teams
+  // For knockout: probability distribution of possible teams
+  teamAProbabilities?: TeamMatchProbability[];
+  teamBProbabilities?: TeamMatchProbability[];
+  actualTeamA?: Team;
+  actualTeamB?: Team;
+}
+
 export interface MatchProbability {
   teamAWin: number;
   draw: number;

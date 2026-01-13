@@ -5,11 +5,12 @@ import {
   SimulationControls,
   TeamProbabilitiesTable,
   MatchupExplorer,
+  Schedule,
 } from './components';
 import { useSimulation } from './hooks/useSimulation';
 import './App.css';
 
-type TabId = 'groups' | 'probabilities' | 'matchups';
+type TabId = 'groups' | 'probabilities' | 'matchups' | 'schedule';
 
 function App() {
   const [activeTab, setActiveTab] = useState<TabId>('groups');
@@ -25,6 +26,7 @@ function App() {
 
   const tabs: { id: TabId; label: string }[] = [
     { id: 'groups', label: 'Groups' },
+    { id: 'schedule', label: 'Schedule' },
     { id: 'probabilities', label: 'Probabilities' },
     { id: 'matchups', label: 'Matchups' },
   ];
@@ -57,6 +59,13 @@ function App() {
 
       <main className="main-content">
         {activeTab === 'groups' && <GroupStage groups={groups} />}
+        {activeTab === 'schedule' && (
+          <Schedule
+            groups={groups}
+            simulationResults={[]}
+            simulationCount={simulationCount}
+          />
+        )}
         {activeTab === 'probabilities' && (
           <TeamProbabilitiesTable probabilities={teamProbabilities} />
         )}
